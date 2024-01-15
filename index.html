@@ -1,0 +1,7 @@
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<p>The BT model formula:</p>
+<p>$$P(x_1 \succ x_2 | p) = \frac{\exp(R^*(p, x_1))}{\exp(R^*(p, x_1)) + \exp(R^*(p, x_2))}$$</p>
+<p>Preference data used to estimate a reward model’s parameters through maximum likelihood, with the loss function:</p>
+<p>$$L(R', \mathcal{D}) = -\mathbb{E}_{(p, x', x'') \sim \mathcal{D}}[\log \sigma(R'(p, x') - R'(p, x''))]$$</p>
